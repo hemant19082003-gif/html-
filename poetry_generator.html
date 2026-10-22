@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>poetry generator</title>
+</head>
+<style>
+*{
+    font-family: Arial;
+    background-color: #f8f1e7;
+}
+
+h1{
+    color:brown;
+}
+div{
+    font-size: 20px;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    justify-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+button{
+    height: 20px;
+    width: 75px;
+    background-color: rgb(196, 210, 242);
+    border-radius: 5px;
+}
+
+</style>
+<body>
+ <center>
+    <h1>Poetry Generator</h1>
+    <p>Welcome to the Poetry Generator! Click the button below to generate a random poem. </p>
+   
+
+<div id="div1">Choose your poetry style:</div>
+
+<button onclick="showSad()">Sad</button>
+<button onclick="showHappy()">Happy</button>
+<button onclick="showRomantic()">Romantic</button>
+<button onclick="showFunny()">Funny</button>
+<button onclick="resetPome()">Reset</button>
+
+<script>
+    function showSad() {
+        document.getElementById("div1").innerHTML =
+        " The one I loved made me cry The one I trusted said goodbye. ";
+    }
+
+    function showHappy() {
+        document.getElementById("div1").innerHTML =
+        " Let your smile shine bright every day And let happiness light your way ✨";
+    }
+
+    function showRomantic() {
+        document.getElementById("div1").innerHTML =
+        " Your smile has become my light Your love makes everything feel right. You've become my world, my heart, my home, With you, I'll never feel alone. 💖";
+    }
+
+    function showFunny() {
+        document.getElementById("div1").innerHTML =
+        " I fell in love and lost my mind, She left me on read, and I paid for her Wi-Fi! 😂 ";
+    }
+
+    function showresetPome() { 
+         document.getElementById("div1").innerHTML = 
+          " Choose your poetry style: ";
+    }
+</script>
+ </center>  
+
+
+</body>
+</html>
